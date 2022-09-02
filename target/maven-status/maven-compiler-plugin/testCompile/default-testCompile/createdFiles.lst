@@ -1,0 +1,5 @@
+AppiumTest/utulities/ConfigurationReader.class
+AppiumTest/runner/runners.class
+AppiumTest/stepdefination/WifiStepDefinations.class
+AppiumTest/pages/WifiPage.class
+AppiumTest/utulities/Driver.class
