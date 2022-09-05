@@ -1,5 +1,6 @@
 package AppiumTest.utulities;
 
+
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -20,12 +21,12 @@ public class Driver {
                 case "android":
 
                     desiredCapabilities.setCapability("platformName", "Android");
-                    desiredCapabilities.setCapability("platformVersion", "10.0");
-                    desiredCapabilities.setCapability("deviceName", "Pixel3");
+                    desiredCapabilities.setCapability("platformVersion", "7.0");
+                    desiredCapabilities.setCapability("deviceName", "Pixel_2");
                     desiredCapabilities.setCapability("automationName", "UiAutomator2");
                     desiredCapabilities.setCapability("app", "/Users/erdalalioglu/Desktop/seleniumdepen/com.ErdalAppiumCucumberTest/src/App/apidemos.apk");
                     try {
-                        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
+                        driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
                         Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                     }catch (MalformedURLException e){
                         e.printStackTrace();

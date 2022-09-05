@@ -17,6 +17,6 @@ import org.junit.runner.RunWith;
 )
 
 
-public class runners {
+public class Runners {
 
 }
